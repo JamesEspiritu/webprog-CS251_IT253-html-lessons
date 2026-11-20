@@ -1,38 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>WEBPROG IT253</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Profile Web Page of James Archer P. Espiritu for WEBPROG IT253">
+  <title>WEBPROG IT253 - Personal Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 850px;
+      margin: 24px auto;
+      padding: 0 16px;
+    }
+    .profile-section {
+      margin-bottom: 24px;
+      padding: 12px 16px;
+      border-left: 3px solid #333;
+    }
+    .section-title {
+      font-weight: bold;
+      font-size: 1.15em;
+    }
+    .highlight {
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+    }
+    th, td {
+      border: 1px solid #666;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
 </head>
 <body>
 
-<h1>Personal Profile Web Page of James Archer P. Espiritu</h1>
+  <header id="page-header">
+    <h1>Personal Profile Web Page of James Archer P. Espiritu</h1>
+    <nav id="quick-nav" aria-label="Profile sections">
+      <a href="#about-me">About Me</a> |
+      <a href="#education">Education &amp; Achievements</a> |
+      <a href="#it-experience">IT Experience</a> |
+      <a href="#hobbies">Hobbies &amp; Interests</a> |
+      <a href="#goals">Goals / Dream</a> |
+      <a href="#gallery">Picture Gallery</a>
+    </nav>
+  </header>
 
-<p>
-<strong>About Me</strong><br>
-Hello, my name is James Espiritu.<br><br>
+  <div id="about-me" class="profile-section">
+    <h2 class="section-title">About Me</h2>
+    <p>Hello, my name is <span class="highlight">James Espiritu</span>.</p>
+    <p id="course-info">My Course is <span class="highlight">BSIT</span>.</p>
+  </div>
 
-<strong>Course</strong><br>
-My Course is BSIT.<br><br>
+  <div id="education" class="profile-section">
+    <h2 class="section-title">Education / Achievements</h2>
+    <ul id="education-list">
+      <li class="edu-item">Graduated High School from Elizabeth Seton School</li>
+      <li class="edu-item">Graduated SHS from Mapúa University Makati</li>
+      <li class="edu-item">President of Samahan Ng Filipino Makati</li>
+      <li class="edu-item">Currently enrolled in Asia Pacific College</li>
+    </ul>
 
-<strong>Education / Achievements</strong><br>
-Graduated High School from Elizabeth Seton School<br>
-Graduated SHS from Mapúa University Makati<br>
-President of Samahan Ng Filipino Makati<br>
-Currently enrolled in Asia Pacific College<br><br>
+    <table id="education-table">
+      <caption>Academic Background Summary</caption>
+      <thead>
+        <tr>
+          <th scope="col">Level / Role</th>
+          <th scope="col">Institution / Organization</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>High School</td>
+          <td>Elizabeth Seton School</td>
+        </tr>
+        <tr>
+          <td>Senior High School</td>
+          <td>Mapúa University Makati</td>
+        </tr>
+        <tr>
+          <td>Student Leadership</td>
+          <td>Samahan Ng Filipino Makati (President)</td>
+        </tr>
+        <tr>
+          <td>College (Current)</td>
+          <td>Asia Pacific College</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-<strong>IT Experience</strong><br>
-Tinkered with and repaired laptops, computers, mobile devices, and peripherals.<br><br>
+  <div id="it-experience" class="profile-section">
+    <h2 class="section-title">IT Experience</h2>
+    <p>Tinkered with and repaired laptops, computers, mobile devices, and peripherals.</p>
+  </div>
 
-<strong>Hobbies & Interests</strong><br>
-My hobbies are computer games, anime, manga, and tinkering with electronics.<br><br>
+  <div id="hobbies" class="profile-section">
+    <h2 class="section-title">Hobbies &amp; Interests</h2>
+    <p>My hobbies are computer games, anime, manga, and tinkering with electronics.</p>
+    <ol id="hobby-highlights">
+      <li class="hobby-item">Computer games</li>
+      <li class="hobby-item">Anime and manga</li>
+      <li class="hobby-item">Tinkering with electronics</li>
+    </ol>
+  </div>
 
-<strong>Goals In Life / Dream</strong><br>
-To be able to work in different fields of technology and gain further skills.<br><br>
+  <div id="goals" class="profile-section">
+    <h2 class="section-title">Goals In Life / Dream</h2>
+    <p>To be able to work in different fields of technology and gain further skills.</p>
+  </div>
 
-<strong>Picture Gallery</strong><br>
-<img src="20260801_204250.jpg" alt="Black and white cat wearing a white sheep hat" width="500">
-
-</p>
+  <div id="gallery" class="profile-section">
+    <h2 class="section-title">Picture Gallery</h2>
+    <img id="gallery-cat-img" class="gallery-photo" src="20260801_204250.jpg" alt="Black and white cat wearing a white sheep hat" width="500">
+    <p><a href="#page-header">Back to top</a></p>
+  </div>
 
 </body>
 </html>
